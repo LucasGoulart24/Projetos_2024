@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+/*-------Cores-------*/
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --green: #11ED1F;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+/*-------Menu-------*/
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+    padding: 10px;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.menu a:hover{
+    color: var(--green);
+}
+
+/*-------Logo-------*/
+.logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    border-radius: 10px;
+}
+
+.logo img{
+    width: 80%;
+}
+
+/*-------Botão_de_contato-------*/
+.menu button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--green);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*-------Titulo-------*/
+.titulo{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 70px;
+}
+
+.titulo h1{
+    font-family: "Tiny5";
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.titulo p{
+    color: var(--white);
+    font-size: 30px;
+}
+
+/*-------Parallax-------*/
+#parallax{
+    background-image: url(./Img/Background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*-------Segundo_Titulo-------*/
+.segundo_titulo{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: var(--black);
+    background-color: var(--green);
+}
+
+/*-------Produtos-------*/
+.produtos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*-------Produto-------*/
+.produto{
+    width: 420px;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--black);
+    border: 2px solid var(--green);
+    border-radius: 10px;
+}
+
+.produto img{
+    width: 390px;
+    height: 53vh;
+}
+
+.produto h3{
+    color: var(--white);
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.produto p{
+    color: var(--white);
+    font-size: 20px;
+}
+
+.produto button{
+    width: 350px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--green);
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/*-------Terceiro_Titulo-------*/
+.terceiro_titulo{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: var(--black);
+    background-color: var(--green);
+}
+
+/*-------Wallpapers-------*/
+.wallpapers{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*-------Wallpaper-------*/
+.wallpaper{
+    width: 700px;
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--black);
+    border: 1px solid var(--green);
+    border-radius: 10px;
+}
+
+.wallpaper img{
+    width: 680px;
+    height: 60vh;
+}
+
+.wallpaper button{
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--green);
+    color: var(--black);
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/*-------Contato-------*/
+.contato{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Img/Background2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*-------Info-------*/
+.info{
+    width: 590px;
+    height: 79vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.info h3{
+    color: var(--green);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/*-------Dados-------*/
+.dados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dados input{
+    width: 500px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(236, 236, 236);
+    color: var(--black);
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.dados textarea{
+    width: 500px;
+    height: 30vh;
+    outline: none;
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+}
+
+.dados label{
+    margin-left: -80%;
+}
+
+/*-------Botao_de_enviar-------*/
+.info button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--green);
+    color: var(--black);
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*-------Responsividade-------*/
+@media screen and (min-width: 370px) and (max-width: 768px) {
+    .titulo{
+        font-size: 40px;
+    }
+
+    .titulo p{
+        font-size: 17px;
+    }
+
+    .segundo_titulo h2{
+        font-size: 50px;
+    }
+
+    .terceiro_titulo h2{
+        font-size: 50px;
+    }
+
+    .wallpaper{
+        width: 430px;
+        height: 64vh;
+    }
+
+    .wallpaper img{
+        width: 390px;
+        height: 50vh;
+    }
+
+    .wallpaper button{
+        width: 300px;
+    }
+
+    .info{
+        width: 450px;
+    }
+
+    .dados input{
+        width: 370px;
+    }
+
+    .dados textarea{
+        width: 370px;
+    }
+
+    .dados label{
+        margin-left: -73%;
+    }
+}
