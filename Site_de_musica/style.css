@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*--------Cores--------*/
+:root{
+    --black: #000000;
+    --dark_gray: #0e0e0e;
+    --white: #ffffff;
+    --gray: #dcdcdc;
+    --blue: #3CDBD3;
+    --purple: #C964FB;
+}
+
+body{
+    background-color: var(--white);
+}
+
+/*--------Menu--------*/
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.menu img{
+    width: 50px;
+    height: 50px;
+}
+
+.menu span{
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--gray);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/*--------Pesquisa--------*/
+.pesquisa input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--gray);
+    color: var(--black);
+    padding: 0 10px;
+}
+
+.pesquisa button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+/*--------Principal--------*/
+.principal{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.principal img{
+    width: 500px;
+    height: 80vh;
+}
+
+/*--------Titulo--------*/
+.titulo{
+    width: 50%;
+    height: 40vh;
+    padding: 10px;
+}
+
+.titulo h1{
+    color: var(--white);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.titulo p{
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.titulo .linha{
+    width: 80%;
+    height: 10px;
+    border-radius: 50px;
+    background-color: var(--white);
+}
+
+/*--------Links--------*/
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.links span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*--------Parallax--------*/
+#parallax{
+    background-image: url(./Img/Background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*--------Titulo2--------*/
+.titulo2{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.titulo2 h2{
+    font-size: 50px;
+}
+
+/*--------Musicas--------*/
+.musicas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.musica{
+    width: 450px;
+    height: 71vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--gray);
+    border-radius: 10px;
+    border: 1px solid var(--black);
+}
+
+.musica img{
+    width: 430px;
+    height: 50vh;
+}
+
+.musica h3{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/*--------Botão--------*/
+.musica .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.musica .botao a{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/*--------Modo_dark--------*/
+.dark-mode{
+    background-color: var(--black);
+}
+
+.dark-mode .menu{
+    background-color: var(--black);
+}
+
+.dark-mode .menu span{
+    background-color: var(--dark_gray);
+    color: var(--white);
+}
+
+.dark-mode .pesquisa input{
+    background-color: var(--dark_gray);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+.dark-mode .pesquisa button{
+    background-color: var(--purple);
+    color: var(--black);
+}
+
+.dark-mode .titulo2{
+    background-color: var(--purple);
+}
+
+.dark-mode .musica{
+    background-color: var(--dark_gray);
+    border: 1px solid var(--white);
+}
+
+.dark-mode .musica h3{
+    color: var(--white);
+}
+
+.dark-mode .musica p{
+    color: var(--white);
+}
+
+.dark-mode .botao a{
+    background-color: var(--white);
+    color: var(--black);
+}
+/*------------------------*/
+
+/*--------Responsividade--------*/
+@media screen and (max-width: 768px) {
+    .pesquisa input{
+        width: 200px;
+    }
+
+    .principal{
+        flex-direction: column;
+    }
+
+    .principal img{
+        width: 300px;
+        height: 40vh;
+        margin-top: 10%;
+    }
+
+    .titulo{
+        width: 70%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .titulo .linha{
+        width: 100%;
+    }
+
+    .titulo h1{
+        font-size: 30px;
+        margin-top: -40px;
+    }
+
+    .musica{
+        width: 400px;
+    }
+
+    .musica img{
+        width: 370px;
+        height: 48vh;
+    }
+}
