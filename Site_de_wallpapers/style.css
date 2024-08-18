@@ -25,7 +25,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 12px;
 }
 
 .menu h3{
@@ -74,12 +74,8 @@ body{
     color: var(--white);
 }
 
-.banner h1{
-    font-size: 50px;
-}
-
 #parallax{
-    background-image: url(./Img/Banner.jpg);
+    background-image: url(./Img/Banner_do_site.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -97,8 +93,8 @@ body{
 }
 
 .wallpaper{
-    width: 30%;
-    height: 50vh;
+    width: 40%;
+    height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,6 +111,16 @@ body{
     margin-bottom: 10px;
 }
 
+.wallpaper p{
+    width: 20%;
+    color: var(--white);
+    margin-bottom: 10px;
+    font-size: 15px;
+    background-color: var(--light-gray);
+    border-radius: 50px;
+    text-align: center;
+}
+
 .wallpaper button{
     width: 50%;
     height: 7vh;
@@ -123,5 +129,40 @@ body{
     border-radius: 10px;
     background-color: var(--blue);
     font-size: 20px;
+    cursor: pointer;
+}
+
+/*----------Copyright----------*/
+.copyright{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--light-gray);
+}
+
+.copyright h3{
+    color: var(--white);
+    font-size: 25px;
+}
+
+/*----------Redes----------*/
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    font-size: 40px;
+    border-radius: 50%;
     cursor: pointer;
 }
