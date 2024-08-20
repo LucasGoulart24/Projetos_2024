@@ -67,11 +67,6 @@ body{
     cursor: pointer;
 }
 
-/*---------Icon---------*/
-.icon{
-    display: none;
-}
-
 /*---------User---------*/
 .menu span{
     width: 50px;
@@ -195,40 +190,27 @@ body{
 }
 
 /*---------Responsividade---------*/
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .pesquisa input{
         width: 200px;
     }
 
     .pesquisa button{
-        display: none;
-    }
-    
-    .icon{
-        display: block;
+        width: 80px;
     }
 
-    .icon span{
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
-        background: linear-gradient(to right, var(--red), var(--orage));
-        color: var(--white);
-        font-size: 25px;
-        cursor: pointer;
+    .menu span{
+        width: 45px;
+        height: 45px;
+        font-size: 30px;
     }
 
     .filme{
-        width: 400px;
-        height: 77vh;
+        height: 70vh;
     }
 
     .filme img{
-        height: 50vh;
-    }
-
-    .filme button{
-        width: 350px;
+        height: 44vh;
     }
 
     .trailer{
@@ -236,7 +218,6 @@ body{
     }
 
     .trailer video{
-        width: 90%;
-        margin-top: 30px;
+        width: 97%;
     }
 }
