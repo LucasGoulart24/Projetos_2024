@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+/*---------Login---------*/
+.login{
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+    -webkit-box-shadow: 1px 8px 5px -1px rgba(0,0,0,0.29);
+    -moz-box-shadow: 1px 8px 5px -1px rgba(0,0,0,0.29);
+    box-shadow: 1px 8px 5px -1px rgba(0,0,0,0.29);
+}
+
+/*---------Titulo---------*/
+.titulo{
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: dodgerblue;
+}
+
+.titulo h1{
+    font-size: 40px;
+}
+
+.titulo p{
+    font-size: 20px;
+}
+
+/*---------Conta---------*/
+.conta{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.conta i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 37px;
+    border-radius: 10px;
+}
+
+/*---------Info---------*/
+.info{
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info h2{
+    color: dodgerblue;
+    font-size: 40px;
+}
+
+.info p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.info input{
+    width: 70%;
+    height: 7vh;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: gainsboro;
+    color: black;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+/*---------Link---------*/
+.link{
+    margin-top: 10px;
+}
+
+.link a{
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.link a:hover{
+    color: dodgerblue;
+}
+
+/*---------Botão---------*/
+.info button{
+    width: 60%;
+    height: 7vh;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+/*---------Link2---------*/
+.link2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.link2 p{
+    font-size: 17px;
+}
+
+.link2 a{
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.link2 a:hover{
+    color: dodgerblue;
+}
