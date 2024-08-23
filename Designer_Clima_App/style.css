@@ -11,7 +11,45 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: gainsboro;
+}
+
+/*--------Pesquisa--------*/
+.pesquisa{
+    width: 32%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.pesquisa input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(232, 232, 232);
+    padding: 0 10px;
+    color: black;
+    font-size: 15px;
+}
+
+.pesquisa span{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: dodgerblue;
 }
 
 /*--------Clima--------*/
