@@ -34,7 +34,7 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .carta h2{
@@ -72,18 +72,41 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .redes i{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: transparent;
     border-radius: 50%;
     color: white;
-    font-size: 50px;
-    border: 1px solid white;
+    font-size: 47px;
+}
+
+#facebook{
+    background: linear-gradient(45deg, blue, dodgerblue);
+}
+
+#instagram{
+    background: linear-gradient(45deg, blue, purple, orange);
+}
+
+#github{
+    background: linear-gradient(45deg, black, gray);
+}
+
+/*-------Botão_de_mensagem-------*/
+.carta button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, orangered, orange);
+    font-size: 23px;
+    cursor: pointer;
 }
