@@ -11,19 +11,52 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./Img/Background-light.jpg);
+    background-image: url(./Img/background.dia.jpg);
     background-position: center;
     background-size: cover;
     transition-duration: 0.5s;
 }
 
+.modo{
+    width: 36%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.282);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.modo button{
+    width: 50%;
+    height: 13vh;
+    border: none;
+    outline: none;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.modo i{
+    font-size: 70px;
+}
+
+.modo h1{
+    font-size: 50px;
+}
+
 /*---------Modo_dark---------*/
 .dark-mode{
-    background-image: url(./Img/Background-dark.jpg);
+    background-image: url(./Img/background_noite.jpg);
 }
 
 .dark-mode .modo{
-    background-color: rgba(0, 0, 0, 0.451);
+    background-color: rgba(0, 0, 0, 0.282);
 }
 
 .dark-mode .modo h1{
@@ -36,38 +69,4 @@ body{
 
 .dark-mode .modo i{
     color: black;
-}
-/*---------------------------*/
-
-.modo{
-    width: 30%;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.451);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-}
-
-.modo button{
-    width: 100px;
-    height: 100px;
-    border: none;
-    outline: none;
-    background-color: black;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.modo i{
-    font-size: 70px;
-}
-
-.modo h1{
-    margin-bottom: 20px;
-    font-size: 50px;
 }
